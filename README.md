@@ -29,10 +29,10 @@ The current approach is designed to segment neurons from a 3D image stack, howev
 
 ## Instalation
 
-1. Download the lastest release of the code 
+1. Download the lastest release of the code [here](https://github.com/paul-hernandez-herrera/meson_matlab/releases)
 2. Dowload the MathWorks code [*Frangi Vesselness Filter*](https://www.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter) and create the mex file for the code eig3volume.c (```
 mex eig3volume.c ```)
-3. Make sure to add the downloaded codes to Matlab Path.
+3. Make sure to add the downloaded codes to the Matlab Path.
 
 ## Usage
 **Requirements**: 3D image stack in tif format and the radii size in voxel of the structures to detect
