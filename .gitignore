@@ -1,2 +1,5 @@
 # local code to compute the eigenvalues of hessian matrix. The user must download this code from mathworks
 frangi_filter_version2a
+
+#ignore test data
+test

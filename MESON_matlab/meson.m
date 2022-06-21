@@ -1,4 +1,4 @@
-function meson(file_input,varargin)
+function result = meson(file_input,varargin)
     close all;
     %segmentation process to detect bright tubular structures from the 3D images stack using a one-class classification approach where the distribution of the eigenvalues of
     %the Hessian matrix is computed from a training set (background voxels automatically detected) and assign a cost function to eliminate background voxels. 
@@ -102,6 +102,7 @@ function meson(file_input,varargin)
         print(gcf,fullfile(file_path, [file_name '_output.png']),'-dpng');
     end
     
+    result = struct('segmentation',segmentation, 'output_model',output_model);
     fprintf('MESON has finished ... \n');
     fprintf('Segmentation file saved in: %s \n\n',fullfile(file_path,[file_name_to_save_segmentation '.tif']));
     fprintf('Mat file saved in: %s \n\n',fullfile(file_path,[file_name_to_save_model_variables '.mat']));
