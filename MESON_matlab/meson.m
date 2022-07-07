@@ -6,7 +6,10 @@ function result = meson(file_input,varargin)
     % https://doi.org/10.1016/j.jneumeth.2016.03.019
     
     % Parameters:
-    % stack: 3D image stack to be segmented
+    % file_input: file path to the 3D image stack to be segmented (tif or
+    % mhd format) 
+
+    % Parameters optional:
     % radius: radius of the tubular structures to be detected. default [2 3 4 5]
     % spacing: spacing (voxel size) of the 3D stack. Important to compute features (eigenvalues) if the stack
     % is anisotropic, current implementation of Laplacian does not take
