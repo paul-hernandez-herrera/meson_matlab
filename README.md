@@ -17,6 +17,10 @@ The current approach is designed to segment neurons from a 3D image stack, howev
 - *Model construction (**Step 3**)*: The training set and feaure descriptors are used to generate a one-class classification model for each given radius to segment the background.
 - *Prediction (**Step 4**)*: The one-class classification model is applied to the 3D image stack, high values correspond to voxels belonging to background. Foreground is detected as those voxels rejected to be background.
 
+3D+t image stack | Model prediction
+--- | --- 
+
+![MESON_Prediction_combined](https://user-images.githubusercontent.com/84725695/179030562-c4f9c042-8509-4201-809d-eb0524eeaa38.gif)
 
 
 ## System requirements
