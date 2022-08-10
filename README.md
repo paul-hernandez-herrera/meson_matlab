@@ -35,7 +35,14 @@ The current approach is designed to segment neurons from a 3D image stack, howev
 
 1. Download the lastest release of the code [here](https://github.com/paul-hernandez-herrera/meson_matlab/releases)
 2. Dowload the MathWorks code [*Frangi Vesselness Filter*](https://www.mathworks.com/matlabcentral/fileexchange/24409-hessian-based-frangi-vesselness-filter) and create the mex file for the code eig3volume.c (```
-mex eig3volume.c ```)
+mex eig3volume.c ```). This step may require to install a compiler, if it not installed
+    * Ubuntu
+        * Open Terminal
+        * ```sudo apt update ```
+        * ```sudo apt install build-essential ```
+        * ```gcc --version```
+        * this must show the gcc version: ```gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0```
+
 3. Make sure to add the downloaded codes to the Matlab Path.
 
 ## Usage
