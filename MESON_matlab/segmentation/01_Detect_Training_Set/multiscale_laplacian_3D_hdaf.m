@@ -6,8 +6,8 @@ function [multiscaleLaplacian,scales] = multiscale_laplacian_3D_hdaf(img_3d, r)
     
     %computing the size of the filter in the Fourier domain to detect structures of the given radius. 
     %obtained by visual inspection of the size of laplacian in the spatial domain of filter
-	size_filter = 0.66./r;
-%     size_filter = 1.6227./(0.0531 + r);
+	%size_filter = 0.66./r;
+    size_filter = (0.542423208./r) + (0.0957539421./(r.^2));
     flag = 0; %compute Laplacian
     
     %fourier transform
